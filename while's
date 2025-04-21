@@ -1,0 +1,143 @@
+#1
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("банк");
+        Console.WriteLine("Скок деняк кладем?");
+        decimal money = Convert.ToDecimal(Console.ReadLine());
+
+        Console.WriteLine("На сколько месяцев?");
+        int months = Convert.ToInt32(Console.ReadLine());
+        decimal now = money;
+        decimal percent = 0.07m;
+
+        for (int i = 1; i <= months; i++)
+        {
+            decimal add = now * percent;
+            now = now + add;
+        }
+
+        Console.WriteLine("Через " + months + " месяцев будет: " + now.ToString("F2") + " руб.");
+    }
+}
+2#
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Сколько кладем?");
+            decimal money = Convert.ToDecimal(Console.ReadLine());
+            
+            Console.WriteLine("На сколько месяцев?");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            decimal now = money;
+            decimal p = 0.07m;
+            int i = 1;
+
+            while (i <= n)
+            {
+                decimal plus = now * p;
+                now = now + plus;
+                i++;
+            }
+
+            Console.WriteLine("Будет: " + now.ToString("F2") + " руб.");
+        }
+    }
+}
+#3
+﻿using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Таблицу умножения");
+
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++)
+                {
+                    int result = i * j;
+                    Console.Write("{0,4}", result);
+                }
+
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+        }
+    }
+}
+#4
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Умножаем до 10");
+            while
+            {
+                Console.WriteLine("Первое");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Второе");
+                int b = Convert.ToInt32(Console.ReadLine());
+
+                if (a >= 0 && a <= 10 && b >= 0 && b <= 10)
+                {
+                    int c = a * b;
+                    Console.WriteLine("РЕзультат: " + c);
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Недопустимо!");
+                }
+            }
+        }
+    }
+}
+#5
+﻿using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,,] io = {
+                { { 1, 2 }, { 3, 4 } },
+                { { 4, 5 }, { 6, 7 } },
+                { { 7, 8 }, { 9, 10 } },
+                { { 10, 11 }, { 12, 13 } }
+            };
+
+            Console.Write("{{");
+            for (int i = 0; i < io.GetLength(0); i++)
+            {
+                Console.Write("{{");
+                for (int j = 0; j < io.GetLength(1); j++)
+                {
+                    Console.Write(io[i, j, 0] + ", " + io[i, j, 1]);
+
+                    if (j < io.GetLength(1) - 1)
+                    {
+                        Console.Write("}, {");
+                    }
+                }
+                Console.Write("}}");
+                if (i < mas.GetLength(0) - 1)
+                {
+                    Console.Write(", {{");
+                }
+            }
+            Console.Write("}}");
+            Console.WriteLine();
+        }
+    }
+}
