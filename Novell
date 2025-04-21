@@ -1,0 +1,64 @@
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Вы просыпаетесь в Паноптикуме.");
+            Console.WriteLine("1 - Осмотреться");
+            Console.WriteLine("2 - Попробовать вспомнить");
+
+            string choice1 = Console.ReadLine();
+
+            if (choice1 == "1")
+            {
+                Console.WriteLine("Странное место.");
+                Console.WriteLine("1 - Вернуться");
+                Console.WriteLine("2 - Подойти к "джекалопу" ");
+
+                string choice2 = Console.ReadLine();
+
+                if (choice2 == "2")
+                {
+                    Console.WriteLine("Оно разговаривает.");
+                    Console.WriteLine("1 - Поговорить");
+                    Console.WriteLine("2 - Орать");
+
+                    string choice3 = Console.ReadLine();
+
+                    if (choice3 == "2")
+                    {
+                        Console.WriteLine(" Ничего не случилось");
+                        Console.WriteLine("1 - Поговорить");
+
+                        string choice4 = Console.ReadLine();
+
+                        if (choice4 == "1")
+                        {
+                            Console.WriteLine("Вы узнали об этом месте и что тут твориться.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Теперь ты решаешь кто тут виновен.");
+                            Console.WriteLine("Усни.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("ТЫ потерял сознание");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Ушел в изначальную комнату.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Конец.");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
