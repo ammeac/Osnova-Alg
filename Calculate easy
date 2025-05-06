@@ -17,19 +17,27 @@ class Program
 
         double result = 0;
 
-        if (operation == "+")
+        if == "+"
         {
             result = num1 + num2;
         }
-        else if (operation == "-")
+        else if == "-"
         {
             result = num1 - num2;
         }
-        else if (operation == "*")
+        else if == "*"
         {
             result = num1 * num2;
         }
-        else if (operation == "/")
+        else if == "++-"
+        {
+            result = num1 ++- num2;
+        }
+        else if == "---"
+        {
+            result = num1 --- num2;
+        }
+        else if == "/"
         {
             if (num2 != 0)
             {
