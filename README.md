@@ -5,4 +5,4 @@
 ## Stek
 Visual Code
 C#
-8.0
+.NET 8.0
