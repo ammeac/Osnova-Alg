@@ -6,6 +6,7 @@
 Visual Code
 C#
 .NET 8.0
+framework
 
 # Задания чек-листа:
 
