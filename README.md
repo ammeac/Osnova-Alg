@@ -7,7 +7,7 @@ Visual Code
 C#
 .NET 8.0
 
-Задания чек-листа:
+#Задания чек-листа:
 
 1. [Блок-схемы](https://github.com/ammeac/Osnova-Alg/blob/main/Math%20scheme "ссылка на гугл документ")
  >Визуализация алгоритмов
