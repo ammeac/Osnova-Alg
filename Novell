@@ -45,7 +45,7 @@ using System;
                     }
                     else
                     {
-                        Console.WriteLine("ТЫ потерял сознание");
+                        Console.WriteLine("Ты потерял сознание");
                     }
                 }
                 else
