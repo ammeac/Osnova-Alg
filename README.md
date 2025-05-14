@@ -25,7 +25,7 @@ framework
 5. [Задачи на массивы](https://github.com/ammeac/Osnova-Alg/blob/main/array "Задачи на массивы")
 >Операции с массивами
  ___
-6. [Крестики-Нолики](пока нет "игра")
+6. [Крестики-Нолики](https://github.com/ammeac/Osnova-Alg/blob/main/TIC%20TAC%20TOE "игра")
 >Игра для двоих участников
   ___
 7. [Тест](https://github.com/ammeac/Osnova-Alg/blob/main/Test "ответы на тест")
