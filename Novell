@@ -1,64 +1,153 @@
+
 using System;
 
-    class Program
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        Console.WriteLine("Ты! Проснулся! В... Паноптикуме!");
+
+        while (true)
         {
-            Console.WriteLine("Вы просыпаетесь в Паноптикуме.");
-            Console.WriteLine("1 - Осмотреться");
-            Console.WriteLine("2 - Попробовать вспомнить");
+            Console.WriteLine("\nЧто делать?");
+            Console.WriteLine("1 - Посмотреть.");
+            Console.WriteLine("2 - Голова болит!..");
+            Console.WriteLine("3 - Слушать музыку.");
+            Console.WriteLine("4 - #Зевнул, Спать!");
+            Console.WriteLine("5 - Выйти из игры.");
 
             string choice1 = Console.ReadLine();
 
             if (choice1 == "1")
             {
-                Console.WriteLine("Странное место.");
-                Console.WriteLine("1 - Вернуться");
-                Console.WriteLine("2 - Подойти к "джекалопу" ");
+                Console.WriteLine("Странное место! Решетки и камеры!");
+                Console.WriteLine("1 - Идти. (куда?)");
+                Console.WriteLine("2 - К зайцу с рогами.");
+                Console.WriteLine("3 - Найти камеру с именем 'Эс'.");
 
                 string choice2 = Console.ReadLine();
 
                 if (choice2 == "2")
                 {
-                    Console.WriteLine("Оно разговаривает.");
-                    Console.WriteLine("1 - Поговорить");
-                    Console.WriteLine("2 - Орать");
+                    Console.WriteLine("Ого! Заяц говорит.");
+                    Console.WriteLine("1 - Болтать и расспросить про преступления.");
+                    Console.WriteLine("2 - Сказать, что он врет.");
 
                     string choice3 = Console.ReadLine();
 
                     if (choice3 == "2")
                     {
-                        Console.WriteLine(" Ничего не случилось");
-                        Console.WriteLine("1 - Поговорить");
+                        Console.WriteLine("Только заяц фыркнул и показал язык.");
+                        Console.WriteLine("1 - Продолжить расспрашивать.");
 
                         string choice4 = Console.ReadLine();
 
                         if (choice4 == "1")
                         {
-                            Console.WriteLine("Вы узнали об этом месте и что тут твориться.");
+                            Console.WriteLine("Заяц рассказал больше о Милграме.");
+                            Console.WriteLine("Ты теперь решаешь, кто виноват. Виновен или нет? Усни...");
+                            Console.WriteLine("КОНЕЦ 1: Ты - судья во сне! Вердикт вынесен!");
+                            return;
                         }
                         else
                         {
-                            Console.WriteLine("Теперь ты решаешь кто тут виновен.");
-                            Console.WriteLine("Усни.");
+                            Console.WriteLine("Заяц обиделся и испарился.");
+                            Console.WriteLine("КОНЕЦ 2: Остался один запертый в Паноптикуме.");
+                            return;
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Ты потерял сознание");
+                        Console.WriteLine("Заяц 'загипнотизировал'.");
+                        Console.WriteLine("КОНЕЦ 3: Спишь вечным сном под кошмары убийств Милграма.");
+                        return;
                     }
+                }
+                else if (choice2 == "1")
+                {
+                    Console.WriteLine("Куда-то идти. Милграм ждет...");
                 }
                 else
                 {
-                    Console.WriteLine("Ушел в изначальную комнату.");
+                      Console.WriteLine("Нашел камеру '011'. А там только зеркало.");
+                      Console.WriteLine("КОНЕЦ 4:  В зеркале увидел себя - ты потерял свою личность.");
+                      return;
+                }
+
+            }
+            else if (choice1 == "2")
+            {
+                Console.WriteLine("В голове бардак. И только странный куб.");
+                Console.WriteLine("1 - Пытаться вспомнить преступление с помощью куба.");
+                Console.WriteLine("2 - Забыть все.");
+
+                string choice5 = Console.ReadLine();
+
+                if (choice5 == "1")
+                {
+                    Console.WriteLine("Есть, но это была та причина, как ты здесь оказался. Знание сломало тебя.");
+                    Console.WriteLine("КОНЕЦ 5: Потерял всё в Паноптикуме!...");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Не подчиниться правилам Милграм.");
+                    Console.WriteLine("КОНЕЦ 6: И снова всё забыл.");
+                    return;
                 }
             }
-            else
+             else if (choice1 == "3")
             {
-                Console.WriteLine("Конец.");
+                Console.WriteLine("Ты проходишь дальше и испольузешь куб на заключенном 001.");
+                Console.WriteLine("1 - Ты видишь тот ужас, что натворил парень и ничего не делаешь.");
+                Console.WriteLine("2 - Хорошенько взмазать ему.");
+
+                string choice6 = Console.ReadLine();
+
+                if(choice6 == "1"){
+                     Console.WriteLine("Твой разум не был готов к обработке такого.");
+                     Console.WriteLine("КОНЕЦ 7: Убивший близких.");
+                     return;
+
+                } else {
+                    Console.WriteLine("Ты даешь вердикт - 001 невиновен.");
+                }
+
+            }
+             else if (choice1 == "4")
+            {
+                Console.WriteLine("Снова уснул, лол.");
+                Console.WriteLine("КОНЕЦ 8: Вечный сон.");
+                return;
+            }
+             else if (choice1 == "5")
+            {
+                Console.WriteLine("Мне не нравится тюрьма, пака.");
+                Console.WriteLine("КОНЕЦ 9: А как же песенки?");
+                return;
+            }
+             else
+            {
+                Console.WriteLine("Я тебя не понимаю чел.");
             }
 
-            Console.ReadKey();
+            Console.WriteLine("\nЧто теперь?");
+            Console.WriteLine("1 - Идти к след заключенному.");
+
+            string choice7 = Console.ReadLine();
+
+            if (choice7 == "1")
+            {
+                Console.WriteLine("Твои ноги слабеют и ты падаешь в обморок.");
+                Console.WriteLine("КОНЕЦ 10: Слишком много информации.");
+            }
+
+            {
+                Console.WriteLine("Много тупишь.");
+            }
+
+
+
         }
     }
 }
