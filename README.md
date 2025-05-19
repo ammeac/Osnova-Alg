@@ -16,7 +16,7 @@ framework
 2. [Простой кулькулятор](https://github.com/ammeac/Osnova-Alg/blob/main/Calculate%20easy "код калькуляьора")
 >Приложение для выполнения базовых операций
     ___
-3. [Новелла](https://github.com/ammeac/Osnova-Alg/blob/main/Novell "в 5 шагов")
+3. [Новелла](https://github.com/ammeac/Osnova-Alg/blob/main/Novell "в 20 шагов")
 >История с выбором вариантов
    ___
 4. [Задачи на циклы](https://github.com/ammeac/Osnova-Alg/blob/main/while's "Задачи на циклы")
