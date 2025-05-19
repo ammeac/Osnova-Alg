@@ -30,3 +30,6 @@ framework
   ___
 7. [Тест](https://github.com/ammeac/Osnova-Alg/blob/main/Test "ответы на тест")
 >Ответы на вопросы, дз
+  ___
+8. [Консольный проводник файловой системы](https://github.com/ammeac/Osnova-Alg/blob/main/Console_Provod.. "Проводник дьявола")
+>Ответы на вопросы, дз
