@@ -1,1 +1,49 @@
+using System;
+namespace KrestekeNoleke;
 
+class Program
+{
+        public static void Main(string[] args)
+    {
+        Console.WriteLine("пр, это крестеке-нолеке");
+
+        while (true)
+        {
+            ПоказатьПоле();
+            Ход();
+            СменитьИгрока();
+        }
+    }
+
+    public static char[] поле = new char[9] { '_', '_', '_', '_', '_', '_', '_', '_', '_' };
+
+    public static char игрок = 'X';
+    
+    public static void ПоказатьПоле()
+    {
+        Console.WriteLine("  " + поле[0] + " | " + поле[1] + " | " + поле[2] + "  ");
+        Console.WriteLine(" ---|---|---");
+        Console.WriteLine("  " + поле[3] + " | " + поле[4] + " | " + поле[5] + "  ");
+        Console.WriteLine(" ---|---|---");
+        Console.WriteLine("  " + поле[6] + " | " + поле[7] + " | " + поле[8] + "  ");
+    }
+
+    public static void Ход()
+    {
+        Console.Write("Куда ставим " + игрок + "? (1-9): ");
+        int номер = int.Parse(Console.ReadLine()) - 1;
+        поле[номер] = игрок;
+    }
+
+    public static void СменитьИгрока()
+    {
+        if (игрок == 'X')
+        {
+            игрок = 'O';
+        }
+        else
+        {
+            игрок = 'X';
+        }
+    }
+}
