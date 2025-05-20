@@ -4,14 +4,10 @@ using System;
 
 class Program {
     static void Main() {
-        string[] input = Console.ReadLine().Split();
-        
+        string[] input = Console.ReadLine().Split();        
         long a = Convert.ToInt64(input[0]);
         long b = Convert.ToInt64(input[1]);
-
         long totalTasks = a + b;
-        
-
         Console.WriteLine(totalTasks);
     }
 }
@@ -108,7 +104,7 @@ namespace app4
   ```
 
 5.
-    ```
+   ```
 using System;
 
 namespace ConsoleApp3
