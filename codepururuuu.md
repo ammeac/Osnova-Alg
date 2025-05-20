@@ -48,7 +48,7 @@ namespace ConsoleApp3
   ```
 
 3.
-    ```
+  ```
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,20 +61,14 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-
             string[] numbers = Console.ReadLine().Split();
             int count = 0;
-
             for (int i = 1; i < numbers.Length - 1; i++)
             {
-
                 if (Convert.ToInt64(numbers[i]) > Convert.ToInt64(numbers[i - 1]) && Convert.ToInt64(numbers[i]) > Convert.ToInt64(numbers[i + 1]))
                     count++;
             }
-
             Console.WriteLine(count);
-
-
         }
     }
 }
@@ -132,23 +126,17 @@ namespace ConsoleApp3
             int a = int.Parse(input[0]);
             int b = int.Parse(input[1]);
             int c = int.Parse(input[2]);
-
             double discriminant = (b * b) - (4 * a * c);
-
             if (discriminant == 0)
             {
-
                 double root = -b / (2.0 * a);
                 Console.WriteLine(root);
             }
             else
             {
-
                 double sqrtDiscriminant = Math.Sqrt(discriminant);
-
                 double root1 = (-b + sqrtDiscriminant) / (2 * a);
-                double root2 = (-b - sqrtDiscriminant) / (2 * a);
-
+                double root2 = (-b - sqrtDiscriminant) / (2 * a);              
                 Console.WriteLine(root1 + " " + root2);
             }
         }
