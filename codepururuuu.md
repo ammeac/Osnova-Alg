@@ -75,7 +75,7 @@ namespace ConsoleApp3
   ```
 
 4.
-    ```
+  ```
 ﻿using System;
 
 namespace app4
@@ -85,22 +85,17 @@ namespace app4
         static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());
-
             int[] fibonacciArray = new int[number + 1];
-
             fibonacciArray[1] = 1;
-
             if (number >= 2)
             {
                 fibonacciArray[2] = 1;
             }
-
             for (int i = 3; i <= number; i++)
             {
                 fibonacciArray[i] = fibonacciArray[i - 1] + fibonacciArray[i - 2];
             }
-          
-            int sumOfNumbers = 0;
+                      int sumOfNumbers = 0;
             for (int i = 1; i <= number; i++)
             {
                 sumOfNumbers = sumOfNumbers + fibonacciArray[i];
@@ -110,8 +105,8 @@ namespace app4
     }
 }
 
-
   ```
+
 5.
     ```
 using System;
