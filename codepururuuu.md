@@ -31,11 +31,9 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
             int c = Convert.ToInt32(Console.ReadLine());
-
             if (a + b > c && a + c > b && b + c > a)
             {
                 Console.WriteLine("Да");
@@ -44,11 +42,11 @@ namespace ConsoleApp3
             {
                 Console.WriteLine("Нет");
             }
-
         }
     }
 }
   ```
+
 3.
     ```
 ﻿using System;
