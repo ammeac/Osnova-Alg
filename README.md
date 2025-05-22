@@ -31,7 +31,7 @@ framework
 7. [Тест](https://github.com/ammeac/Osnova-Alg/blob/main/Test "ответы на тест")
 >Ответы на вопросы, дз
   ___
-8. [Консольный проводник файловой системы](https://github.com/ammeac/Osnova-Alg/blob/main/Console_Provod.. "Проводник дьявола")
+8. [Консольный проводник файловой системы](https://github.com/ammeac/Osnova-Alg/blob/main/Console_Provod.md "Проводник дьявола")
 >Создать консольное приложение, которое будет выполнять функции простого файлового проводника. Пользователь сможет просматривать содержимое каталогов, открывать файлы, создавать новые каталоги и файлы, а также удалять их.
   ___
 9. [Задачи на coderun](https://github.com/ammeac/Osnova-Alg/blob/main/codepururuuu.md "кодик пупуппу")
